@@ -169,7 +169,6 @@ def evaluate_model(model, test_images, test_labels):
     cm = confusion_matrix(test_labels, y_pred)
     print("Confusion Matrix:")
     print(cm)
-
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, cmap='Blues', fmt='g')
     plt.xlabel('Predicted')
